@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+.hero {
+  background-image: url('../Imagens/FundoPrimeiro.png');
+  background-size: cover;
+  background-position: bottom;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: bottom center;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.hero-content {
+  text-align: center;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-style: italic;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Navigation */
+.main-nav {
+  background-color: #2e6930;
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.main-nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.main-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.main-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+/* Planting Steps Section */
+.planting-steps {
+  background-image: url('../Imagens/FundoTitulos1.png');
+  background-repeat: no-repeat;
+  background-color: #e9e2c7;
+  padding: 40px 20px;
+  text-align: center;
+  scroll-margin-top: 60px;
+}
+
+.planting-steps h2 {
+  color: #2e6930;
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.planting-steps img {
+  width: 700px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  display: block;
+}
+
+/* Contribution Section */
+.contribution {
+  background-color: #2e6930;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  scroll-margin-top: 60px;
+}
+
+.contribution h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.video-container {
+
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  max-width: 900px;
+  margin: 0 auto 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.play-button {
+  width: 90px;
+  height: 90px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s ease;
+}
+
+.play-button:hover {
+  transform: scale(1.1);
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-top: 18px solid transparent;
+  border-bottom: 18px solid transparent;
+  border-left: 30px solid #ff5722;
+  margin-left: 6px;
+}
+
+.video-caption {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+/* Purpose Section */
+.purpose {
+  background-color: #2e6930;
+  padding: 60px 20px;
+  color: white;
+  text-align: center;
+  scroll-margin-top: 60px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.purpose h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.purpose p {
+  max-width: 800px;
+  margin: 0 auto 25px;
+  text-align: left;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.purpose p:nth-child(2) {
+  font-size: 1.3rem;
+  font-weight: 500;
+  text-align: center;
+  margin: 40px auto;
+}
+
+/* Comportamento de rolagem suave */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero h1 {
+      font-size: 2.5rem;
+  }
+  
+  .subtitle {
+      font-size: 1.2rem;
+  }
+  
+  .planting-steps h2,
+  .contribution h2,
+  .purpose h2 {
+      font-size: 1.8rem;
+  }
+  
+  .video-container {
+      height: 300px;
+  }
+  
+  .purpose p {
+      font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+      font-size: 2rem;
+  }
+  
+  .subtitle {
+      font-size: 1rem;
+  }
+  
+  .main-nav ul {
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  .main-nav li {
+      margin-bottom: 10px;
+  }
+  
+  .play-button {
+      width: 70px;
+      height: 70px;
+  }
+  
+  .triangle {
+      border-top: 14px solid transparent;
+      border-bottom: 14px solid transparent;
+      border-left: 22px solid #ff5722;
+  }
+  
+  .video-container {
+      height: 220px;
+  }
+  
+  .purpose p:nth-child(2) {
+      font-size: 1.1rem;
+  }
+}
