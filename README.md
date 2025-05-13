@@ -8,7 +8,7 @@ O site tem como objetivo inspirar usuários a refletirem sobre a importância do
 
 ## 🔗 Acesse o Projeto
 
-Você pode visualizar o projeto em um navegador local abrindo o arquivo `index.html`.
+Você pode visualizar o projeto em [www.planteumaarvore.com](https://planteumaarvore.vercel.app/).
 
 ## 🧩 Funcionalidades
 
