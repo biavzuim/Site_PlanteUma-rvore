@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
     <header class="hero">
         <div class="hero-content">
@@ -25,61 +28,80 @@
         </ul>
     </nav>
 
-    <section id="como-plantar" class="planting-steps">
-        <h2>PLANTANDO SUA SEMENTE</h2>
+    <section id="como-plantar" class="planting-steps" data-aos="fade-up">
+        <div class="section-title">
+            <h2>PLANTANDO SUA SEMENTE</h2>
+        </div>
         <div class="steps-container">
             <div class="step">
                 <img src="Imagens/Passoapasso.png" alt="Passo a Passo">
-            
-                  
-               
+            </div>
+        </div>
     </section>
 
-    <section id="seu-impacto" class="contribution">
-        <h2>NO QUE VOCÊ CONTRIBUI?</h2>
+    <section id="seu-impacto" class="contribution" data-aos="fade-up">
+        <div class="section-title">
+            <h2>NO QUE VOCÊ CONTRIBUI?</h2>
+        </div>
+        <div class="steps-container">
             <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/dX-tu2ODL5g"
-                        title="YouTube video player" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        width="900" height="415"
-                        allowfullscreen>
-                      
-                </iframe> 
-              </div>
-        <p class="video-caption">
-            Vivemos tempos em que o concreto cresce mais rápido que as árvores. Em que a pressa nos afasta da terra, e a tecnologia, por vezes, nos desconecta daquilo que somos: natureza.
-        </p>
+                <iframe src="https://www.youtube.com/embed/dX-tu2ODL5g" title="YouTube video player" allowfullscreen
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture">
+                </iframe>
+            </div>
+            <p class="video-caption">
+                Vivemos tempos em que o concreto cresce mais rápido que as árvores. Em que a pressa nos afasta da terra,
+                e a tecnologia, por vezes, nos desconecta daquilo que somos: natureza.
+            </p>
+        </div>
     </section>
 
-    <section id="quem-somos" class="purpose">
-        <h2>NOSSO PROPÓSITO</h2>
-        <p>
-            Somos estudantes de programação. Vivemos em meio a telas.
-             Mas acreditamos que a verdadeira inovação não está apenas no que se cria com máquinas, e sim no que se sonha com o coração. 
-             Este projeto nasceu de uma semente. 
-             A semente da ideia de que o ser humano pode transformar o mundo unindo inteligência e sensibilidade. 
-             Que é possível viver num equilíbrio onde natureza e progresso não caminhem em direções opostas, mas lado a lado. Ao receber esta semente, você recebe mais do que um gesto simbólico. Você recebe um convite. Um chamado à reflexão. 
-            
-        </p>
-        <p>
-            Que mundo você quer deixar?
-        </p>
-        <p> Plantar é mais do que um ato físico.
-             É um manifesto silencioso.
-              É dizer: "eu acredito em um futuro onde o verde ainda floresce, onde o cuidado ainda é valor, onde o coletivo importa." 
-              Cada árvore que nasce carrega em si uma promessa. 
-              Cada clique neste site pode ser o início de uma nova consciência. 
-
-        </p>
-        <p>Cada atitude sua — por menor que pareça — move o mundo.
-            Inovação, quando aliada pela sabedoria da natureza, pode restaurar tudo.
-            E o futuro começa com você.
-        </p>
-
-        <p> Projeto de Pratica Extensionista Unianchieta. 
-            Alunos: Beatriz Zuim, João Berg, João Gabriel Agg, Matheus Alves, Lucas Barbosa e Thomaz Ortiz
-        
-        </p>
+    <section id="quem-somos" class="purpose" data-aos="fade-up">
+        <div class="section-title">
+            <h2>NOSSO PROPÓSITO</h2>
+        </div>
+        <div class="steps-container">
+            <p>
+                Somos estudantes de programação. Vivemos em meio a telas.
+                Mas acreditamos que a verdadeira inovação não está apenas no que se cria com máquinas, e sim no que se
+                sonha
+                com o coração.
+                Este projeto nasceu de uma semente.
+            </p>
+            <p class="highlight">
+                Que mundo você quer deixar?
+            </p>
+            <p>
+                Plantar é mais do que um ato físico.
+                É um manifesto silencioso.
+                É dizer: "eu acredito em um futuro onde o verde ainda floresce, onde o cuidado ainda é valor, onde o
+                coletivo importa."
+                Cada árvore que nasce carrega em si uma promessa.
+                Cada clique neste site pode ser o início de uma nova consciência.
+            </p>
+            <p>
+                Cada atitude sua — por menor que pareça — move o mundo.
+                Inovação, quando aliada à sabedoria da natureza, pode restaurar tudo.
+                E o futuro começa com você.
+            </p>
+        </div>
     </section>
+
+    <footer class="footer">
+        <img src="Imagens/logo_unianchieta.png" alt="Passo a Passo">
+        <p>
+            Projeto de Prática Extensionista Unianchieta. <br>
+            Alunos: Beatriz Zuim, João Berg, João Gabriel Agg, Matheus Alves, Lucas Barbosa e Thomaz Ortiz.
+        </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000, // duração da animação em ms
+            once: true      // anima uma única vez ao entrar na tela
+        });
+    </script>
 </body>
+
 </html>
